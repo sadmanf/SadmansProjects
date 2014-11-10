@@ -14,7 +14,7 @@ Period 6
 
     https://github.com/CallMeSenpai/ericliao_sadman_natan_philipp
 
->SQL blog
+>SQL blog<br>
   {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
 
   - Allows a user to make blog posts onto a website
@@ -24,9 +24,11 @@ Period 6
     https://github.com/sadmanf/miniblog
 
 
-MINI PROJECTS:
 
->Intro Project 1
+
+<b>MINI PROJECTS:</b>
+
+>Intro Project 1<br>
   {Sadman Fahmid, Genji Noguchi}
   
   - Extracts Pokemon data from a CSV file and prints them out into a formatted table
@@ -34,14 +36,14 @@ MINI PROJECTS:
 
     https://github.com/stuycs-softdev/submissions/tree/master/6/intro-proj1/noguchi_fahmid
 
->Regular Expressions
+>Regular Expressions<br>
   {Sadman Fahmid, Michael Huang}
   
   - Reads through a .txt file and attempts to extract the names from the file
 
     https://github.com/stuycs-softdev/submissions/tree/master/6/regexp/sadman-michael
 
->MongoDB Login
+>MongoDB Login<br>
   {Sadman Fahmid, Terrance Liang}
 
   - Fully function login/register pages that also display user errors.
