@@ -6,7 +6,7 @@ Period 6
 
 <b>MAIN PROJECTS:</b>
 
->Language Interpreter<br>
+><b>Language Interpreter</b><br>
   {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
   
   - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
@@ -14,7 +14,7 @@ Period 6
 
     https://github.com/CallMeSenpai/ericliao_sadman_natan_philipp
 
->SQL blog<br>
+><b>SQL blog</b><br>
   {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
 
   - Allows a user to make blog posts onto a website
@@ -28,7 +28,7 @@ Period 6
 
 <b>MINI PROJECTS:</b>
 
->Intro Project 1<br>
+><b>Intro Project 1</b><br>
   {Sadman Fahmid, Genji Noguchi}
   
   - Extracts Pokemon data from a CSV file and prints them out into a formatted table
@@ -36,14 +36,14 @@ Period 6
 
     https://github.com/stuycs-softdev/submissions/tree/master/6/intro-proj1/noguchi_fahmid
 
->Regular Expressions<br>
+><b>Regular Expressions</b><br>
   {Sadman Fahmid, Michael Huang}
   
   - Reads through a .txt file and attempts to extract the names from the file
 
     https://github.com/stuycs-softdev/submissions/tree/master/6/regexp/sadman-michael
 
->MongoDB Login<br>
+><b>MongoDB Login</b><br>
   {Sadman Fahmid, Terrance Liang}
 
   - Fully function login/register pages that also display user errors.
