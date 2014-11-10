@@ -4,9 +4,9 @@ Sadman's Projects
 Software Development Fall Semester Projects
 Period 6
 
-MAIN PROJECTS:
+<b>MAIN PROJECTS:</b>
 
->Language Interpreter
+>Language Interpreter<br>
   {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
   
   - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
