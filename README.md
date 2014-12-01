@@ -23,7 +23,12 @@ Period 6
 
     https://github.com/sadmanf/miniblog
 
+><b>API Project</b><br>
+  {Sadman Fahmid, Corrin Offenholley}
 
+  - Filters out academic websites through Google's API
+
+    https://github.com/sadmanf/APIproject	   
 
 
 <b>MINI PROJECTS:</b>
