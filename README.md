@@ -4,6 +4,14 @@ Sadman's Projects
 Software Development Fall Semester Projects 
 Period 6
 
+<b>FINAL PROJECT:</b>
+><b>dllb</b><br>
+  {Sadman Fahmid, Eric Liao, Matthew Cook, Terrance Liang}
+  
+  - Group Organizer
+
+    https://github.com/mcookhome/dllb
+
 <b>MAIN PROJECTS:</b>
 
 ><b>Language Interpreter</b><br>
@@ -55,3 +63,10 @@ Period 6
   - Uses sessions to keep track of the user and whether or not user is still logged in
 
     https://github.com/stuycs-softdev/submissions/tree/master/6/login/sadman_terrance
+
+><b>Whack a Mole</b><br>
+  {Sadman Fahmid}
+
+  - Utilizes Javascript to create a whack-a-mole game in the browser.
+  
+    https://github.com/stuycs-softdev/submissions/tree/master/6/invisible-cow/sadman_fahmid
