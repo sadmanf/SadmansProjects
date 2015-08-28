@@ -1,0 +1,451 @@
+{% extends "base.html" %}
+
+{% block text %}
+
+{% if loggedin == True %}
+{% if name == None %}
+<style type="text/css">
+	#group{
+		top:50px;
+		text-align: center;
+		right:50%;
+		margin-right: -120px; 
+		position: absolute;
+		width:250px;
+		height: 70%;
+	}
+	#groups{
+		overflow: auto;
+		text-align: center;
+		width: 100%;
+	}
+	.group-button{
+		width: 100%;
+		height: 40px;
+		color: #FF756B;
+		background: #61CDF5; 
+	}br{
+		line-height: 200px;
+	}
+	#container{
+		position: absolute;
+	}
+	#name{
+		position: relative;
+		width: 100%; 
+		display:inline-block;
+	}
+
+</style>
+
+<div id="group">
+	<font face="License Plate" size=25>Existing Groups</font> 
+	{% for x in groupNames %}
+	<a id="white" class="button-xlarge pure-button group-button" href="/group/{{x}}">{{x}}</a> <br>
+	{% endfor %}
+</div>
+<br>
+
+{% else %}
+<font id="font" size="25"><center> {{name}} </center></font>
+<br>
+
+
+<table class="pure-table pure-table-bordered">
+	<thead><tr>Group Members</tr></thead>
+
+	{% for fmember in fmembers %}
+	{% if loop.index%2 == 1 %}
+	<tr>
+	{% endif %}
+		<td>
+				<font size ="1">
+					<div id="name">
+						<a href="/profile/{{members[loop.index-1]}}"><b><img src="//graph.facebook.com/{{fmember}}/picture?width=100&height=100"></b></font></a>
+						{% if members[loop.index-1] == admin %} 
+					&nbsp<font size ="1"> <b>ADMIN</font></b> 
+					{% endif %}
+
+					{% if username == admin %} 
+					{% if members[loop.index-1] != admin %}<form class="pure-form" method="post"><input class="button-xsmall pure-button red" name="{{members[loop.index-1]}}" type="submit" value="Remove"></form>
+					{% endif %}
+					{% endif %}
+					<br>
+				</div>
+			</td>
+		{% if loop.index%2 == 0 %}
+		</tr>
+                {% endif %}
+		{% endfor %}
+	{% if fmembers|length % 2 == 1 %}
+	<td></td></tr>
+        {% endif %}
+	</table>
+
+	{% if username == admin %}
+	<br><br>
+	<form class="pure-form" action="" method="post">
+		<input class="pure-input-1-5 suggest-member member" name="member" type="text" placeholder="Username" autocomplete="off"><br>
+		<input class="sbutton button-xsmall pure-button member" name="submit" type="submit"  value="Add member">
+	</form>	
+	{% endif %}
+	{% if username in members %}
+	<form class="pure-form" method="post">
+		<input class="button-xsmall pure-button red" name="submit" type="submit"  value="Leave">
+	</form>
+	{% endif %}
+	{% if username == admin %}
+	<script>
+		$(function(){
+			var availableTags = {{possible | safe}};
+			$( "input.suggest-member" ).autocomplete({
+				source: availableTags
+			});
+		});
+	</script>
+	<form class="pure-form" method="post">
+
+		<script type="text/javascript">
+			function showrequests(){
+				document.getElementById('requests').style.display = "block";
+			}
+			function dim(){
+				document.getElementById('dim').style.display = "block";
+			}
+
+		</script>
+
+		<style type="text/css">
+			.member{
+				border: 1px solid grey;
+				width:200px;
+				height:35px;	
+			}
+			#requests{
+				text-align: center;
+				z-index: 3;	
+				top:0;
+				bottom: 0;
+				margin:auto;
+				left: 40%; 
+				position: fixed;
+				padding:10px 50px;
+				border:7px solid gray;
+				border-radius:10px;
+				background-color: #fff;
+				color: red;
+				font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+			}
+		</style>
+
+		{% if reqMems %}
+		<a class="pure-button go" onclick="dim();showrequests()"> Show New Member Requests</a>
+		{% endif %}
+		<div>
+			<table class="pure-table pure-table-bordered" border="4" bgcolor="white" id="requests" style="display: none">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Approve</th>
+						<th>Deny</th>
+					</tr>
+				</thead>
+				{% for n in reqMems %}
+				<tr>
+					<td>&nbsp{{n}}&nbsp</td>
+					<td><center>
+						<input class="button-xsmall pure-button green" name="{{n}}" type="submit"  value="Approve">
+
+					</center>
+					<td><center>
+						<input class="button-xsmall pure-button red" name="{{n}}" type="submit"  value="Deny">
+
+					</center>
+				</td>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+
+
+</form>
+
+{% endif %}
+<!--script for auto refreshing page-->
+<script>
+	$(document).ready(
+		function(){
+			setInterval(function(){
+				var num = Math.floor(Math.random()*100);
+				$("#outer").load(" #chatbox");
+			},3000);
+		});
+</script>
+{% if username in members %}
+
+
+<br><br>
+
+<!-- original chatbox here -->
+<font color='black'>
+	<div id="outer" class="outer">
+		<div id="chatbox" class="chatbox">
+			{% for n in (chatlog[-18:]) %}
+			<b><a href="/profile/{{n[1]}}">{{n[1]}}</a></b> ({{n[3]}}): {{n[2]}} <br>					     
+			{% endfor %}
+		</div>
+	</div>
+</font>
+<form class="pure-form" action="" method="post">
+	Message: <textarea rows="1" cols="50" wrap="physical" name="message" maxlength="130"></textarea>
+	<input class="button-xsmall pure-button go" class="button" name="sendmessage" id="submitmsg" type="submit"  value="Send">
+	<br><font size ="2">&emsp;&emsp;&emsp;&emsp;&emsp;(130 character limit)</font>
+</form>
+<br>
+
+<a id="white" class="sbutton pure-button" href="/chat/{{name}}"> Full Chat History </a>
+<br><br><br>
+<b> Mass Communicate </b><br>
+<form class="pure-form" method="post">
+	Message: <textarea rows="5" cols="50" wrap="physical" name="message" maxlength="130"></textarea><br><font size ="2">&emsp;&emsp;&emsp;&emsp;&emsp;(130 chracter limit)</font><br><br>
+	<input class="button-xsmall pure-button red" name="submit" type="submit"  value="Dual Contact">
+</form>
+
+
+<script type="text/javascript">
+	function newTask(){
+		document.getElementById('dim').style.display = "block";
+		document.getElementById('taskform').style.display = "block";
+	}
+	function hideTask(){
+		document.getElementById('dim').style.display = "none";
+		document.getElementById('taskform').style.display = "none";
+		document.getElementById('requests').style.display = "none";
+	}
+	
+</script>
+<style type="text/css">
+	#font{
+		font-family: "License Plate";
+		font-size: 1000%;
+		width: 100%;
+		overflow: auto;
+		white-space:nowrap;
+	}
+	#dim{
+		z-index: 1;
+		height:100%;
+		width: 100%;
+		top:0px;
+		right:0px;
+		opacity: .90;
+		background-color:#313131;
+		position: fixed;
+	}
+	#taskform{
+		z-index: 3;	
+		top:200px;
+		left:50%;
+		margin-left: -300px;
+		position: absolute;
+		padding:10px 50px;
+		border:7px solid gray;
+		border-radius:10px;
+		background-color: #fff;
+		color: red;
+		font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	}
+	#addsubmit{
+		width:130px;
+	}
+	#taskbox{
+		width:395px;
+	}
+	#empty{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	h1{
+		overflow: hidden;
+		width: 100%;
+	}
+	#tasks{
+		border: 10px;
+	}
+
+	#tasklist{	
+		text-align: center;
+		height: 200px;
+		overflow: auto;
+		opacity: .95;
+		top:250px;
+		left: 40%;
+		position: absolute;
+		padding: 20px 30px;
+		border: 2px dashed red;
+		border-radius: 10px;
+		background-color: #FFF8DC;
+	}
+
+	#buttontask{
+		text-align: center;
+		position: absolute;
+		left:41%;
+	}
+	.pure-button{
+		color:white;
+	}
+	.red{
+		background: red;
+	}
+
+</style>
+
+<br><br>
+<div id="tasklist">
+	<form class="pure-form" method="post" id="tasks">
+		<table bgcolor="white" width="800px" class="pure-table pure-table-bordered pure-table-horizontal">
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Description</th>
+					<th>Due Date</th>
+					<th>Added By</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% if hasTasks == False %}
+				<tr>
+					<td>There are no tasks available.<td><td><td><td>
+					</tr>
+					{% endif %}
+
+					{% for n in tasklist %}
+					<tr>
+						<td>&nbsp{{n[2]}}&nbsp</td>
+						<td>&nbsp{{n[3]}}&nbsp</td>
+						<td>&nbsp{{n[4]}}&nbsp</td>
+						<td>&nbsp{{n[1]}}&nbsp</td>
+						<td><center>
+							{% if username==admin %}
+							<input class="button-xsmall pure-button red" name="{{n[2]}}" type="submit"  value="Remove">
+							{% else %}
+							<b><font color="red">PROHIBITED</font></b>
+							{% endif %}
+						</center>
+					</td>
+				</tr>
+			</tbody>
+			{% endfor %}
+		</table>
+		<br>
+		<a id="buttontask" class="sbutton pure-button" onclick="newTask()">Add New Task</a>
+	</form>
+	<br><br>
+</div>
+
+
+<div id="dim" style="display:none" onclick=hideTask()>
+</div>
+<form id="taskform" name="newtask" class="pure-form" method="post" style="display:none">
+	<h1 align="center" color=black>Task Submission</h1>
+	Task Name: <input required id="taskbox" name="taskname" type="text"><br>
+	Description: <textarea rows="5" cols="50" wrap="physical" name="description" maxlength="130"></textarea><br><font size ="2">&emsp;&emsp;&emsp;&emsp;&emsp;(130 character limit)</font><br>
+
+	Due Date: <select name="month">
+	<option value="01">January</option>
+	<option value="02">February</option>
+	<option value="03">March</option>
+	<option value="04">April</option>
+	<option value="05">May</option>
+	<option value="06">June</option>
+	<option value="07">July</option>
+	<option value="08">August</option>
+	<option value="09">September</option>
+	<option value="10">October</option>
+	<option value="11">November</option>
+	<option value="12">December</option>      
+</select>
+<select name="date">
+	<option value="01">1</option>
+	<option value="02">2</option>
+	<option value="03">3</option>
+	<option value="04">4</option>
+	<option value="05">5</option>
+	<option value="06">6</option>
+	<option value="07">7</option>
+	<option value="08">8</option>
+	<option value="09">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>
+<select name="year">
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+	<option value="2021">2021</option>
+	<option value="2022">2022</option>
+	<option value="2023">2023</option>
+	<option value="2024">2024</option>
+	<option value="2025">2025</option>
+</select>
+<input id="addsubmit" class="pure-button go" name="addtask" type="submit"  value="Add Task">
+</form>
+
+<script>
+	window.onload = init;
+	var current = new Date();
+	function init(){
+		document.newtask.month.options[current.getMonth()].selected = true;
+		document.newtask.date.options[current.getDate()-1].selected = true;
+		document.newtask.year.options[current.getFullYear()-2015].selected = true;
+	}
+</script>
+
+
+
+
+{% else %}
+<b> You are not in this group </b><br>
+{% if requested %}
+<b> You already requested to join</b>
+{% else %}
+<form class="pure-form" method="post">
+	<input class="sbutton button-large pure-button" name="submit" type="submit"  value="Request To Join">
+</form>
+
+{% endif %}
+{% endif %}
+{% endif %}
+{% endif %}
+
+{% endblock %}
+<!--  -->
