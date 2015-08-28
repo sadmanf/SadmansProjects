@@ -1,72 +1,55 @@
 Sadman's Projects
 ===============
 
-Software Development Fall Semester Projects 
-Period 6
-
 <b>FINAL PROJECT:</b>
-><b>dllb</b><br>
+><b>[dllb](https://github.com/sadmanf/SadmansProjects/tree/master/dllb)</b><br>
   {Sadman Fahmid, Eric Liao, Matthew Cook, Terrance Liang}
   
   - Group Organizer
 
-    https://github.com/mcookhome/dllb
 
 <b>MAIN PROJECTS:</b>
 
-><b>Language Interpreter</b><br>
+><b>[Language Interpreter](https://github.com/sadmanf/SadmansProjects/tree/master/Language_Interpreter)</b><br>
   {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
   
   - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
   - Takes the most frequent answer and returns that
 
-    https://github.com/CallMeSenpai/ericliao_sadman_natan_philipp
-
-><b>SQL blog</b><br>
+><b>[SQL Blog](https://github.com/sadmanf/SadmansProjects/tree/master/SQL_Blog)</b><br>
   {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
 
   - Allows a user to make blog posts onto a website
   - Other users may comment on the posts in a separate page
   - Makes use of SQL
 
-    https://github.com/sadmanf/miniblog
-
-><b>API Project</b><br>
+><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/API_Project)</b><br>
   {Sadman Fahmid, Corrin Offenholley}
 
   - Filters out academic websites through Google's API
 
-    https://github.com/sadmanf/APIproject	   
-
 
 <b>MINI PROJECTS:</b>
 
-><b>Intro Project 1</b><br>
+><b>[CSV Project](https://github.com/sadmanf/SadmansProjects/tree/master/CSV_Project)</b><br>
   {Sadman Fahmid, Genji Noguchi}
   
   - Extracts Pokemon data from a CSV file and prints them out into a formatted table
   - Search function allows you to isolate a single Pokemon from the table and only display that Pokemon's statistics
 
-    https://github.com/stuycs-softdev/submissions/tree/master/6/intro-proj1/noguchi_fahmid
-
-><b>Regular Expressions</b><br>
+><b>[Regular Expressions](https://github.com/sadmanf/SadmansProjects/tree/master/RegExp)</b><br>
   {Sadman Fahmid, Michael Huang}
   
   - Reads through a .txt file and attempts to extract the names from the file
 
-    https://github.com/stuycs-softdev/submissions/tree/master/6/regexp/sadman-michael
-
-><b>MongoDB Login</b><br>
+><b>[MongoDB Login](https://github.com/sadmanf/SadmansProjects/tree/master/Mongo_Login)</b><br>
   {Sadman Fahmid, Terrance Liang}
 
   - Fully function login/register pages that also display user errors.
   - Uses sessions to keep track of the user and whether or not user is still logged in
 
-    https://github.com/stuycs-softdev/submissions/tree/master/6/login/sadman_terrance
-
-><b>Whack a Mole</b><br>
+><b>[Whack a Mole](https://github.com/sadmanf/SadmansProjects/tree/master/Mongo_Login)</b><br>
   {Sadman Fahmid}
 
   - Utilizes Javascript to create a whack-a-mole game in the browser.
   
-    https://github.com/stuycs-softdev/submissions/tree/master/6/invisible-cow/sadman_fahmid
