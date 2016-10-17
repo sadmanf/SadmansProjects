@@ -1,20 +1,35 @@
 Sadman's Projects
 ===============
 
-<b>FINAL PROJECT:</b>
+<b>FINAL PROJECTS:</b>
 ><b>[dllb](https://github.com/sadmanf/SadmansProjects/tree/master/dllb)</b><br>
   {Sadman Fahmid, Eric Liao, Matthew Cook, Terrance Liang}
   
-  - Group Organizer
+  - Group Organizer for my Software Development class in Senior year of high school
+
+><b>[Tetris](https://github.com/sadmanf/SadmansProjects/tree/master/Tetris)</b><br>
+  {Sadman Fahmid}
+
+  -Tetris game created through processing for my AP Computer Science class in Junior year of high school
+
+<b>NYU LAB ASSIGNMENTS</b>
+><b>[Linker](https://github.com/sadmanf/SadmansProjects/tree/master/Linker)</b><br>
+  {Sadman Fahmid}
+  - Two-Pass Linker for my Operating Systems class in my Sophomore year of college
+
+><b>[Scheduler](https://github.com/sadmanf/SadmansProjects/tree/master/Scheduler)</b><br>
+  {Sadman Fahmid}
+  - Emulates four different scheduling algorithms for my Operating Systems class in my Sophomore year of college
 
 
 <b>MAIN PROJECTS:</b>
+
 
 ><b>[Language Interpreter](https://github.com/sadmanf/SadmansProjects/tree/master/Language_Interpreter)</b><br>
   {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
   
   - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
-  - Takes the most frequent answer and returns that
+  - Returns the most frequent answer
 
 ><b>[SQL Blog](https://github.com/sadmanf/SadmansProjects/tree/master/SQL_Blog)</b><br>
   {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
