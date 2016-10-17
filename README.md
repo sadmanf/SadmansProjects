@@ -10,15 +10,15 @@ Sadman's Projects
 ><b>[Tetris](https://github.com/sadmanf/SadmansProjects/tree/master/Tetris)</b><br>
   {Sadman Fahmid}
 
-  -Tetris game created through processing for my AP Computer Science class in Junior year of high school
+  - Tetris game created through processing for my AP Computer Science class in Junior year of high school
 
 <b>NYU LAB ASSIGNMENTS</b>
-  ><b>[Linker](https://github.com/sadmanf/SadmansProjects/tree/master/Linker)</b><br>
+><b>[Linker](https://github.com/sadmanf/SadmansProjects/tree/master/Linker)</b><br>
   {Sadman Fahmid}
   
   - Two-Pass Linker for my Operating Systems class in my Sophomore year of college
 
-  ><b>[Scheduler](https://github.com/sadmanf/SadmansProjects/tree/master/Scheduler)</b><br>
+><b>[Scheduler](https://github.com/sadmanf/SadmansProjects/tree/master/Scheduler)</b><br>
   {Sadman Fahmid}
   
   - Emulates four different scheduling algorithms for my Operating Systems class in my Sophomore year of college
