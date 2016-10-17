@@ -23,7 +23,7 @@ Sadman's Projects
   - Other users may comment on the posts in a separate page
   - Makes use of SQL
 
-><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/API_Project)</b><br>
+><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/APIproject)</b><br>
   {Sadman Fahmid, Corrin Offenholley}
 
   - Filters out academic websites through Google's API
