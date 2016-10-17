@@ -38,7 +38,6 @@ Sadman's Projects
 
   - Allows a user to make blog posts onto a website
   - Other users may comment on the posts in a separate page
-  - Makes use of SQL
 
 ><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/APIproject)</b><br>
   {Sadman Fahmid, Corrin Offenholley}
