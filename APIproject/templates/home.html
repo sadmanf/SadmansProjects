@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  </head>
+
+  <title> Academic Filter </title>
+  <body>
+    <center><h1> Academic Google Search </h1>
+  
+      <form method="POST" class="pure-form">
+	<input type="text" placeholder="input Text" name="input"></input>
+	<input class="pure-button" type="submit"></input>
+      </form>
+      <br>
+      {% if results != '' %}
+      {% for x in results %}
+      <a href="{{x}}">{{x}}</a><br><br>
+      {% endfor %}
+      {% endif %}
+    
+    </center>
+  </body>
+  
+</html>
