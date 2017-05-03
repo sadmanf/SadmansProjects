@@ -7,6 +7,12 @@ Sadman's Projects
   
   - Reversi game playable through the terminal.
 
+><b>[Party Playlist](https://github.com/sadmanf/SadmansProjects/tree/master/Playlist)</b><br>
+  {Sadman Fahmid}
+  
+  - Collaborative playlist built with Express and the Spotify API.
+
+
 
 <b>NYU LAB ASSIGNMENTS</b>
 ><b>[Linker](https://github.com/sadmanf/SadmansProjects/tree/master/Linker)</b><br>
