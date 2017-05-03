@@ -1,0 +1,13 @@
+<div class="logout">
+	<a href="/logout">Log out</a>
+</div>
+
+<form action="postSpotify/{{state}}" method="post">
+	
+{{#each playlists}}
+	<input type="checkbox" name={{this.id}}>{{this.name}}<br>
+{{/each}}
+
+	<input type="submit">
+
+</form>

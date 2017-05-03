@@ -1,0 +1,12 @@
+<h1>Login</h1>
+
+<h3><form action="" method="POST">
+	Username: <input type="text" name="username" required><br>
+	Password: <input type="password" name="password" required><br>
+	<input type="submit">
+</form>
+</h3>
+{{#if message}}
+	<h2>{{message}}</h2>
+{{/if}}
+<h3>Want to go <a href="/register"> register? </a></h3>

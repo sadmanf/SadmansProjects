@@ -1,0 +1,40 @@
+{
+  "name": "sf2658-final-project",
+  "version": "1.0.0",
+  "description": "Party Playlist",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-008-spring-2017/sf2658-final-project.git"
+  },
+  "author": "Sadman Fahmid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-008-spring-2017/sf2658-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-008-spring-2017/sf2658-final-project#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "morgan": "~1.7.0",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.9.2",
+    "mongoose-url-slugs": "^0.2.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "express-session": "^1.15.2",
+    "node-soundcloud": "0.0.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "soundcloud": "^3.1.2",
+    "spotify-web-api-node": "^2.3.6"
+  }
+}

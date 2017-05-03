@@ -1,0 +1,42 @@
+img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+h1 {
+	color: white; 
+	text-align: center; 
+	font-size: 100;
+} 
+h2 {
+	display:inline-block;
+	background-color:lightgreen;
+	color: black; 
+	text-align: center;
+	padding: 5px;
+}
+h3 {
+	font-size:50;
+} 
+body{
+	background-color: lightblue;
+}
+ol{
+	display: inline-block;
+	margin-left: 30%;
+}
+.box {
+	border: 10px solid white;
+	padding: 50px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 100px;*/
+	background: pink;
+}
+
+.logout {
+	text-align: right;
+	color: white;
+	/*margin-right: 10px;*/
+}

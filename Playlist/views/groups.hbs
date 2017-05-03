@@ -1,0 +1,15 @@
+<div class="logout">
+	<a href="/logout">Log out</a>
+</div>
+
+<h3> WELCOME TO PARTY PLAYLIST, {{user}}! </h3>
+
+
+<u>Your Groups</u><br>
+{{#each groups}}
+	<a href ='/group/{{this.slug}}''>{{this.name}}</a><br>
+{{/each}}
+
+<form action="/create">
+<br><button type="submit">CREATE A NEW GROUP</button><br>
+</form>

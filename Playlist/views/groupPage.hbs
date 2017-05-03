@@ -1,0 +1,23 @@
+<div class="logout">
+	<a href="/logout">Log out</a>
+</div>
+
+<h1> {{groupName}} </h1>
+
+<form method="POST" action="">
+Add new member: <input type="text" name="member">
+<input type="submit">
+</form>
+<br>
+Users: <br>
+{{#each users}}
+	{{this.user}} has posted {{this.num}} songs. <br>
+{{/each}}
+
+<a href={{url}}> Click here to import your playlists from Spotify </a>
+
+<ul style="list-style: none">
+{{#each songs}}
+	<li> <b>{{this.title}}</b>  |  {{this.artists}} </li>
+{{/each}}
+</ul>
