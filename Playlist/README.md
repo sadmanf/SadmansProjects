@@ -85,7 +85,7 @@ An Example Group with Embedded Songs:
 5. as a user, I can add or remove songs to an existing group
 6. as a user, I can connect to my SoundClound/Spotify account and import songs from playlists
 
-## Research Topics
+## Topics
 
 * Integrate user authentication through providers
     * I'm going to be using passport for user authentication
@@ -93,7 +93,6 @@ An Example Group with Embedded Songs:
 * Spotify API
     * I am using the Spotify API so users can import their own playlists and store them in a Group.
 
-8 points total out of 8 required points
 
 ## [Link to Initial Main Project File](app.js) 
 
