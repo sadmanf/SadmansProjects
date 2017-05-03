@@ -1,16 +1,12 @@
 Sadman's Projects
 ===============
 
-<b>FINAL PROJECTS:</b>
-><b>[dllb](https://github.com/sadmanf/SadmansProjects/tree/master/dllb)</b><br>
-  {Sadman Fahmid, Eric Liao, Matthew Cook, Terrance Liang}
-  
-  - Group Organizer for my Software Development class in Senior year of high school
-
-><b>[Tetris](https://github.com/sadmanf/SadmansProjects/tree/master/Tetris)</b><br>
+<b>JAVASCRIPT WORK</b>
+><b>[Reversi](https://github.com/sadmanf/SadmansProjects/tree/master/Reversi)</b><br>
   {Sadman Fahmid}
+  
+  - Reversi game playable through the terminal.
 
-  - Tetris game created through processing for my AP Computer Science class in Junior year of high school
 
 <b>NYU LAB ASSIGNMENTS</b>
 ><b>[Linker](https://github.com/sadmanf/SadmansProjects/tree/master/Linker)</b><br>
@@ -24,7 +20,20 @@ Sadman's Projects
   - Emulates four different scheduling algorithms for my Operating Systems class in my Sophomore year of college
 
 
-<b>MAIN PROJECTS:</b>
+
+<b>HIGH SCHOOL FINAL PROJECTS:</b>
+><b>[dllb](https://github.com/sadmanf/SadmansProjects/tree/master/dllb)</b><br>
+  {Sadman Fahmid, Eric Liao, Matthew Cook, Terrance Liang}
+  
+  - Group Organizer for my Software Development class in Senior year of high school using Python and Flask
+
+><b>[Tetris](https://github.com/sadmanf/SadmansProjects/tree/master/Tetris)</b><br>
+  {Sadman Fahmid}
+
+  - Tetris game created through processing for my AP Computer Science class in Junior year of high school
+
+
+<b>MISC PROJECTS:</b>
 
 
 ><b>[Language Interpreter](https://github.com/sadmanf/SadmansProjects/tree/master/Language_Interpreter)</b><br>

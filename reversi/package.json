@@ -1,0 +1,15 @@
+{
+  "name": "reversi",
+  "version": "1.0.0",
+  "description": "Reversi terminal game",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "readline-sync": "^1.4.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sadman Fahmid",
+  "license": "ISC"
+}
