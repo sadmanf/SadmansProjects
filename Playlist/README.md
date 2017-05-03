@@ -78,8 +78,6 @@ An Example Group with Embedded Songs:
 
 ## User Stories or Use Cases
 
-(___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
-
 1. as non-registered user, I can register a new account with the site
 2. as a user, I can log in to the site
 3. as a user, I can create a new group and invite other users to access it
@@ -89,11 +87,11 @@ An Example Group with Embedded Songs:
 
 ## Research Topics
 
-* (6 points) Integrate user authentication through providers
+* Integrate user authentication through providers
     * I'm going to be using passport for user authentication
     * I'm going to allow users to log in to their Spotify/SoundCloud accounts and connect it to their own account.
-* (2 points) SoundCloud and Spotify API
-    * I am using the two APIs so users can import their own playlists and store them in a Group. I'm not familiar with the APIs but the only functionality I am implementing as of now is import so I am only assigning it 2 points.
+* Spotify API
+    * I am using the Spotify API so users can import their own playlists and store them in a Group.
 
 8 points total out of 8 required points
 
@@ -102,5 +100,4 @@ An Example Group with Embedded Songs:
 ## Annotations / References Used
 
 1. [passport.js authentication docs](http://passportjs.org/docs)
-2. [SoundCloud JavaScript SDK](https://developers.soundcloud.com/docs/api/sdks#javascript)
-3. [Spotify Web API for Node](https://github.com/thelinmichael/spotify-web-api-node) 
+2. [Spotify Web API for Node](https://github.com/thelinmichael/spotify-web-api-node) 
