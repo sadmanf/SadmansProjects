@@ -2,7 +2,7 @@ Sadman's Projects
 ===============
 
 <b>JAVASCRIPT WORK</b>
-><b>[Reversi](https://github.com/sadmanf/SadmansProjects/tree/master/Reversi)</b><br>
+><b>[Reversi](https://github.com/sadmanf/SadmansProjects/tree/master/reversi)</b><br>
   {Sadman Fahmid}
   
   - Reversi game playable through the terminal.
@@ -39,27 +39,6 @@ Sadman's Projects
   - Tetris game created through processing for my AP Computer Science class in Junior year of high school
 
 
-<b>MISC PROJECTS:</b>
-
-
-><b>[Language Interpreter](https://github.com/sadmanf/SadmansProjects/tree/master/Language_Interpreter)</b><br>
-  {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
-  
-  - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
-  - Returns the most frequent answer
-
-><b>[SQL Blog](https://github.com/sadmanf/SadmansProjects/tree/master/SQL_Blog)</b><br>
-  {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
-
-  - Allows a user to make blog posts onto a website
-  - Other users may comment on the posts in a separate page
-
-><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/APIproject)</b><br>
-  {Sadman Fahmid, Corrin Offenholley}
-
-  - Filters out academic websites through Google's API
-
-
 <b>MINI PROJECTS:</b>
 
 ><b>[CSV Project](https://github.com/sadmanf/SadmansProjects/tree/master/CSV_Project)</b><br>
@@ -79,7 +58,7 @@ Sadman's Projects
   - Fully function login/register pages that also display user errors.
   - Uses sessions to keep track of the user and whether or not user is still logged in
 
-><b>[Whack a Mole](https://github.com/sadmanf/SadmansProjects/tree/master/Mongo_Login)</b><br>
+><b>[Whack a Mole](https://github.com/sadmanf/SadmansProjects/tree/master/Whack_A_Mole)</b><br>
   {Sadman Fahmid}
 
   - Utilizes Javascript to create a whack-a-mole game in the browser.
