@@ -2,16 +2,20 @@ Sadman's Projects
 ===============
 
 <b>JAVASCRIPT WORK</b>
-><b>[Reversi](https://github.com/sadmanf/SadmansProjects/tree/master/reversi)</b><br>
-  {Sadman Fahmid}
-  
-  - Reversi game playable through the terminal.
-
 ><b>[Party Playlist](https://github.com/sadmanf/SadmansProjects/tree/master/Playlist)</b><br>
   {Sadman Fahmid}
   
   - Collaborative playlist built with Express and the Spotify API.
 
+><b>[Reversi](https://github.com/sadmanf/SadmansProjects/tree/master/reversi)</b><br>
+  {Sadman Fahmid}
+  
+  - Reversi game playable through the terminal.
+
+><b>[BlackJack](https://github.com/sadmanf/SadmansProjects/tree/master/Blackjack)</b><br>
+  {Sadman Fahmid}
+
+  - Front-end Blackjack game through DOM manipulation. 
 
 
 <b>NYU LAB ASSIGNMENTS</b>
@@ -37,6 +41,27 @@ Sadman's Projects
   {Sadman Fahmid}
 
   - Tetris game created through processing for my AP Computer Science class in Junior year of high school
+
+
+<b>MISC PROJECTS:</b>
+
+
+><b>[Language Interpreter](https://github.com/sadmanf/SadmansProjects/tree/master/Language_Interpreter)</b><br>
+  {Sadman Fahmid, Eric Liao, Natan Zamansky, Philip Steinmann}
+  
+  - Takes a question in the form of WHO or WHAT and uses REGULAR EXPRESSIONS to search through Google for the answer
+  - Returns the most frequent answer
+
+><b>[SQL Blog](https://github.com/sadmanf/SadmansProjects/tree/master/SQL_Blog)</b><br>
+  {Sadman Fahmid, Benedict Bolton, Genji Noguchi, Cooper Weaver}
+
+  - Allows a user to make blog posts onto a website
+  - Other users may comment on the posts in a separate page
+
+><b>[API Project](https://github.com/sadmanf/SadmansProjects/tree/master/APIproject)</b><br>
+  {Sadman Fahmid, Corrin Offenholley}
+
+  - Filters out academic websites through Google's API
 
 
 <b>MINI PROJECTS:</b>

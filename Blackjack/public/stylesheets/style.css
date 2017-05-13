@@ -1,0 +1,125 @@
+img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+h1 {
+	color: white; 
+	text-align: center; 
+	font-size: 100;
+} 
+h2 {
+	display:inline-block;
+	background-color:lightgreen;
+	color: black; 
+	text-align: center;
+	padding: 5px;
+}
+
+h3 {
+	font-size:50px;
+} 
+
+body{
+	height: 100%;
+	background-image: url("https://0.s3.envato.com/files/157921713/tableHd.png");
+	background-color: lightblue;
+}
+
+ol{
+	display: inline-block;
+	margin-left: 30%;
+}
+
+button{
+	font-family: "Courier New";
+	font-size: 20px;
+	border-radius: 10px;
+	margin:5px;
+}
+
+.visible{
+	display: none;
+}
+
+.start{
+	background-color:rgba(255, 31, 125, 0.8);
+	border-radius: 8px;
+	padding: 15px;
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 20%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.score{
+	background-color:rgba(255, 31, 125, 0.8);
+	border-radius: 8px;
+	padding: 15px;
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cpu{
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	height: 300px;
+}
+
+.user{
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 250px;
+}
+
+.back{
+	color: transparent !important;
+	background: repeating-linear-gradient(
+	  45deg,
+	  #606dbc,
+	  #606dbc 4px,
+	  #465298 4px,
+	  #465298 8px
+	);
+}
+
+.game{
+	text-align: center;
+}
+
+
+.red{
+	text-align: left;
+	font-size: 20px;
+	color:red;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	display: inline-block; 
+	background-color: white;
+	height: 200px;
+	width: 150px;
+}
+
+.black{
+	text-align: left;
+	font-size: 20px;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	display: inline-block; 
+	background-color: white;
+	height: 200px;
+	width: 150px;
+}
